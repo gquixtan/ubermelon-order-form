@@ -34,28 +34,31 @@
 </table>
 <p>Place your orders here! You know you want to.</p>
 <form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
-First name:
+
+<label>First name:</label>
     <input type="text" name="firstname"><br>
-Last name:
+
+<label>Last name:</label>
     <input type="text" name="lastname"><br>
-Melon Type:
-    <select>
-        <option name="melontype" value="watermelon">Watermelon</option>
-        <option name="melontype">Honeydew</option>
-        <option name="melontype">Cantalope</option>
-        <option name="melontype">Crenshaw</option>
-        <option name="melontype">Canary</option>
+
+<label>Melon Type:</label>
+    <select name="melontype">
+        <option value="watermelon">Watermelon</option>
+        <option value="honeydew">Honeydew</option>
+        <option value="cantalope">Cantalope</option>
+        <option value="crenshaw">Crenshaw</option>
+        <option value="canary">Canary</option>
     </select><br>
-Quantity*:
+
+<label>Quantity*:</label>
     <input type="number" name="quantity"><br>
-Delivery Time:
+<label>Delivery Time:</label>
     <input type="radio" name="time" value="am" checked>
 12:00am-12:00pm
     <input type="radio" name="time" value="pm" checked>
 12:00pm-12:00am
     <input type="radio" name="time" value="wat" checked>
 What's time?<br>
-
 Returning Customer?
     <input type="radio" name="returning" value="yes" checked>
 Yes
@@ -68,7 +71,8 @@ Dog
 Cat
     <input type="checkbox" name="stats" value="Hedgehog">
 Hedgehog
-    <input type="checkbox" name="stats" value="Balloonicorn">Balloonicorn
+    <input type="checkbox" name="stats" value="Balloonicorn">
+Balloonicorn
     <input type="checkbox" name="stats" value="Yak">
 Yak<br>
     <input type="submit">
